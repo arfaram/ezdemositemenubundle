@@ -1,0 +1,20 @@
+parameters:
+        ez_menu.menu.builder.class: Ez\MenuBundle\Menu\Builder
+services:
+    ez_menu.menu.builder:
+        class: '%ez_menu.menu.builder.class%'
+        arguments:
+            - '@knp_menu.factory'
+            - '@ezpublish.api.service.search'
+            - '@router'
+            - '@ezpublish.config.resolver'
+            - '@ezpublish.api.service.location'
+            - '@ezpublish.translation_helper'
+
+    ez_menu.menu.top:
+        class: '%ez_menu.menu.builder.class%'
+        factory: ['@ez_menu.menu.builder', createTopMenu]
+        arguments: ['@request']
+        scope: request
+        tags:
+            - {name: knp_menu.menu, alias: top}

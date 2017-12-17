@@ -1,0 +1,2 @@
+parameters:
+     menu.default.menucontentsettings.topidentifierlist: [landing_page, blog, product, article]

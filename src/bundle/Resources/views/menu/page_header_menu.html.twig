@@ -1,0 +1,25 @@
+<ul class="nav navbar-nav">
+    {% if menu.count < 6 %}
+        {% for item in menu.children %}
+            <li><a href="{{ item.uri }}">{{ item.label }}</a></li>
+        {% endfor %}
+    {% else %}
+        {% for item in menu.children %}
+            {% if loop.index == 5 %}
+                <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                    more <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                <li><a href="{{ item.uri }}">{{ item.label }}</a></li>
+            {% elseif loop.index == loop.length%}
+                <li><a href="{{ item.uri }}">{{ item.label }}</a></li>
+                </ul>
+                </li>
+            {% else %}
+                <li><a href="{{ item.uri }}">{{ item.label }}</a></li>
+            {% endif %}
+        {% endfor %}
+
+    {% endif %}
+</ul>

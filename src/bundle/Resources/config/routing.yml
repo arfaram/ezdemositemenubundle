@@ -1,0 +1,3 @@
+#ez_menu_homepage:
+    #path:     /
+    #defaults: { _controller: EzMenuBundle:Default:index }

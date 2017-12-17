@@ -1,0 +1,19 @@
+{
+  "name": "arfaram/ezmenubundle",
+  "type": "application",
+  "description": "Create menu for eZPlatform using The KnpMenuBundle",
+  "keywords": ["ezplatform"],
+  "homepage": "https://github.com/arfaram/ezmenubundle",
+  "license": "",
+  "authors": [
+    {
+      "name": "Ramzi Arfaoui",
+      "email": "ramzi_arfa@hotmail.de"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Ez\\MenuBundle\\": "src/bundle"
+    }
+  }
+}
