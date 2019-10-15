@@ -1,6 +1,6 @@
 # EzMenuBundle
 
-`EzMenuBundle` is an extract of [eZPlatform DemoBundle](https://github.com/ezsystems/DemoBundle) to create the menu using [KnpMenuBundle](http://symfony.com/doc/master/bundles/KnpMenuBundle/index.html)
+`Ez demo site Menu Bundle` is an extract of [eZPlatform DemoBundle](https://github.com/ezsystems/DemoBundle) to create the menu using [KnpMenuBundle](http://symfony.com/doc/master/bundles/KnpMenuBundle/index.html)
 
 This bundle helps developer to add first level menu and to keep this bundle as example for custom implementation.
 
@@ -9,27 +9,6 @@ This bundle helps developer to add first level menu and to keep this bundle as e
 eZPublish 5.x, eZPlatform 1.x (Open Source or EE)
 
 Note: Be sure that [KnpMenuBundle](http://symfony.com/doc/master/bundles/KnpMenuBundle/index.html) is installed and activated in AppKernel.php
-
-## Installation
-
-```
-composer require arfaram/ezmenubundle:^1.0
-```
-- Activate the Bundle in AppKernel.php
-
-```
-    public function registerBundles()
-    {
-        $bundles = array(
-            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-            //...
-            new Ez\MenuBundle\EzMenuBundle(),
-        );
-```
-- Clear the cache
-```
-php app/console cache:clear
-```
   
 ## Usage
 
