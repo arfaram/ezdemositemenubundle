@@ -1,4 +1,4 @@
-# EzMenuBundle
+# Menu
 
 `Ez demo site Menu Bundle` is an extract of [eZPlatform DemoBundle](https://github.com/ezsystems/DemoBundle) to create the menu using [KnpMenuBundle](http://symfony.com/doc/master/bundles/KnpMenuBundle/index.html)
 
