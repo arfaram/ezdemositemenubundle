@@ -1,5 +1,5 @@
 {
-  "name": "arfaram/ezmenubundle",
+  "name": "arfaram/ezdemositemenubundle",
   "type": "application",
   "description": "Create menu for eZPlatform using The KnpMenuBundle",
   "keywords": ["ezplatform"],
